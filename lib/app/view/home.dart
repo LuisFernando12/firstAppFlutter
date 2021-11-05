@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 class SmartMovies extends State<SmartMoviesHome>{
-
   var _movies =  <Movies> [];
   final _font = const TextStyle(fontSize: 20.0);
   @override

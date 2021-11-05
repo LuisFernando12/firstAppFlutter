@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class Overview extends StatelessWidget{
   const Overview({Key? key, }) : super(key: key);
+  static String id = "overview";
   // final Movies movie;
   @override
   Widget build(BuildContext context) {
