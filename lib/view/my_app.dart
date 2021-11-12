@@ -1,5 +1,5 @@
 
-import 'package:apps_flutter/app/view/home.dart';
+import 'package:apps_flutter/view/home.dart';
 import 'package:flutter/material.dart';
 
 class SmartMoviesAPP extends StatelessWidget {
@@ -9,14 +9,17 @@ class SmartMoviesAPP extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Smart Movies',
+      theme: ThemeData(
+        brightness:Brightness.dark,
+      ),
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
           title: const Text('Welcome to Smart Movies'),
           backgroundColor: Colors.redAccent,
         ),
-        body:  const Center(
-          child: SmartMoviesHome(),
+        body: const Center(
+          child:  SmartMoviesHome(),
         )
       ),
     );
