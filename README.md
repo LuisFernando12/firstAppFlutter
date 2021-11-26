@@ -1,4 +1,4 @@
-# apps_flutter
+# Watch Movies
 
 A new Flutter project.
 
