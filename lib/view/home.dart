@@ -27,7 +27,7 @@ class SmartMovies extends State<SmartMoviesHome>{
          _movies.add(Movies(movies["id"],movies["title"], movies["overview"], movies["poster_path"], movies["backdrop_path"], movies["adult"], movies["popularity"], "filmes"));
        }
        for(var series in seriesJson["results"]){
-         _series.add(Series(series["id"], series["original_name"] ?? "Um titulo qualquer", series["overview"], series["poster_path"], series["backdrop_path"] ?? series["poster_path"], series["adult"]??false, series["popularity"], "series"));
+         _series.add(Series(series["id"], series["original_name"] ?? "Um titulo qualquer", series["overview"]??"", series["poster_path"] ??"", series["backdrop_path"] ?? series["poster_path"] ?? "", series["adult"]??false, series["popularity"], "series"));
        }
     });
   }
